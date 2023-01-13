@@ -10,6 +10,11 @@ class TurnUserAdminUseCase {
 
   execute({ user_id }: IRequest): User {
     const user = this.usersRepository.findById(user_id);
+    const userDoesNotExist = !user;
+
+    if(userDoesNotExist) {
+      throw new Error("User does not exist");
+    }
     
     Object.assign(user, {
       admin: true,
