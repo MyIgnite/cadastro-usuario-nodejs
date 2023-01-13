@@ -13,7 +13,7 @@ class ShowUserProfileUseCase {
     const userDoesNotExist = !user;
 
     if(userDoesNotExist) {
-      throw new Error("User does not exist")
+      throw new Error("User does not exist");
     }
 
     return user;
