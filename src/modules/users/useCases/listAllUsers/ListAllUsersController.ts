@@ -14,7 +14,7 @@ class ListAllUsersController {
       return response.json(users);
 
     } catch (error) {
-      return response.status(400).json({ error: "mensagem do erro" })
+      return response.status(400).json({ error: "Usuário sem permissão ou Usuário não encontrado" })
     }
   }
 }
