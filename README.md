@@ -17,6 +17,11 @@ Clone o projeto, navegue até a raiz do projeto e execute:</br>
 Execute o comando para testar a aplicação </br>
 `yarn test` </br> </br>
 
+Documentação Swagger </br>
+http://localhost:3333/api-docs/
+
+</br>
+
 - [x] não deve ser capaz de criar novos usuários quando o e-mail já estiver em uso
 - [x] deve ser capaz de transformar um usuário em administrador
 - [x] não deve ser capaz de transformar um usuário não existente como administrador
